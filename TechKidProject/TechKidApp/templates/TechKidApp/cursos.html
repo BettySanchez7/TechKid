@@ -3,15 +3,58 @@
 {% load static %}
 {%block content%}
 
-
-
-    <header class="text-center text-white masthead" style="background: linear-gradient(rgb(59,119,205), #6d28aa 89%), rgb(59,118,205);">
-        <div class="bg-circle-1 bg-circle" style="background: linear-gradient(#6d28aa, #0038a8);"></div>
-        <div class="bg-circle-2 bg-circle" style="background: linear-gradient(180deg, rgb(59,119,205) 30%, #59118e 100%);transform: scale(0.78);padding: -37px;margin: 166px;"></div>
-        <div class="bg-circle-3 bg-circle" style="background: linear-gradient(#59118e, #003893);"></div>
-        <div class="bg-circle-4 bg-circle" style="background: linear-gradient(rgb(63,114,203), #38197a);margin: 123px;"></div>
-    </header>
-    <section></section>
-    <section></section>
+    <section class="article-list" style="background: linear-gradient(rgb(59,119,205), #6d28aa 89%), rgb(59,118,205);">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center" style="color: rgb(255,255,255);font-family: Catamaran, sans-serif;font-weight: bold;font-size: 56px;">¡Disfruta y aprende!</h2>
+                </div>
+                <div class="row articles">
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-left-radius: 20px;border-bottom-left-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/tiktok.jpg' %}" style="border-radius: 20px;"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">TikTok para empresas</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">En este curso de TikTok para empresas, aprenderás a integrar contenido de video de TikTok dentro de la estrategia de marca de tu emprendimiento.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);padding-top: 34px;padding-bottom: 24px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/marketingdig.jpg' %}"  style="border-radius: 20px;"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Marketing digital desde cero</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">¡Aprende las bases del marketing online! Descubre nuevas plataformas de Social Media, estrategias de growth hacking, publicidad digital y más.<br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-right-radius: 20px;border-bottom-right-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/internet.jpg' %}" style="border-radius: 20px;"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">¿Qué es el internet?</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">¡Aprende las bases del marketing online! Descubre nuevas plataformas de Social Media, estrategias de growth hacking, publicidad digital y más.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row articles">
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-left-radius: 20px;border-bottom-left-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/relacional.jpg' %}" style="border-radius: 20px;"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Algebra relacional para principiantes</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">&nbsp;El álgebra relacional es un conjunto de operaciones que describen paso a paso cómo computar una respuesta sobre las relaciones.&nbsp;</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);padding-top: 34px;padding-bottom: 24px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/deriveintegra.jpg' %}" style="border-radius: 20px;"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Introducción a las Integrales y derivadas</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Las derivadas y las integrales como herramientas fundamentales del cálculo, nos permite modelar todos los aspectos de la naturaleza en las ciencias físicas.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-right-radius: 20px;border-bottom-right-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/algebraicas.jpg' %}" style="border-radius: 20px;"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Ecuaciones algebraicas</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;"><strong>Las ecuaciones algebraicas son una igualdad que puede expresarse como un polinomio igualado a cero. Inscríbete y aprende a resolverlas</strong></p><a class="action" href="#" style="color: rgb(255,255,255);"><i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row articles">
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-left-radius: 20px;border-bottom-left-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/excelbaisoc.jpg' %}" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;);"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Excel para principiantes</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Aprende a usar Excel básico con este curso de Excel para principiantes. Revisa las funciones y fórmulas más comunes y ¡simplifica tu trabajo!</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);padding-top: 34px;padding-bottom: 24px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/dogherine--1p7WkGACGw-unsplash.jpg' %}"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Redes sociales desde cero: Logra el éxito digital</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Gestionar nuestras redes sociales ya no es suficiente, hay que implementar una estrategia sólida que sea capaz de hacer crecer tu marca o negocio.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-right-radius: 20px;border-bottom-right-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/softskills.jpg' %}"></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Desarrolla una mentalidad de aprendizaje</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Comprende tus motivaciones al aprender y crea un plan de aprendizaje personal de acuerdo a tu estilo con el curso de mentalidad de aprendizaje.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                    </div>
+                </div>
+            </div>
+    </section>
 
 {%endblock%} 

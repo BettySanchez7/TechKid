@@ -11,6 +11,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
     <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Navigation-with-Button.css' %}"/>
     <link rel="stylesheet" href="{% static 'TechKidApp\assets\bootstrap\css\bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\fonts\font-awesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\fonts\ionicons.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Article-List.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Footer-Clean.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Footer-Dark.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Header-Dark.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Highlight-Blue.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Highlight-Phone.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Navbar-techkid.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\Registration-Form-with-Photo.css' %}"/>
+    <link rel="stylesheet" href="{% static 'TechKidApp\assets\css\styles.css' %}"/>
 </head>
 
 <body>
@@ -31,9 +42,37 @@
 
 
 {%endblock%} 
-    <footer class="p-5 bg-black page-footer">
-        <div class="container align-items-center">
-            <p class="text-center text-white m-0 small">Copyright&nbsp;© Brand 2021</p>
+     <footer class="footer-clean" style="background: linear-gradient(rgb(63,116,204), rgb(99,67,181));">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3 style="color: rgb(255,255,255);">Comunidad</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Becas</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Recursos</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Historias de éxito</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3 style="color: rgb(255,255,255);">Compañia</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Sobre TECHKID</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">¡Estamos contratando!</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Centro de ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3 style="color: rgb(255,255,255);">Enlaces de ayuda</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Avisos de privacidad</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Política de cookies</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook" style="color: rgb(255,255,255);"></i></a><a href="#"><i class="icon ion-social-twitter" style="color: rgb(255,255,255);"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color: rgb(255,255,255);"></i></a><a href="#"><i class="icon ion-social-instagram" style="color: rgb(255,255,255);"></i></a>
+                    <p class="copyright" style="color: rgb(255,255,255);">TECHKID © 2021</p>
+                </div>
+            </div>
         </div>
     </footer>
     {% load static %}
