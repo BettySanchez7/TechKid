@@ -1,12 +1,60 @@
-
 {% extends "TechKidApp/base.html" %}
 
 {% load static %}
 
 {% block content %}
-  <!-- Heading -->
-  
-  
-    <!-- Message -->
-   
+<!-- Heading -->
+<section class="article-list" style="background: linear-gradient(rgb(59,119,205), #6d28aa 89%), rgb(59,118,205);">
+    <div class="contact-header"
+        style="background: rgba(0,0,0,0.4);padding-top: 34px;padding-right: 24px;padding-left: 24px;">
+        <div class="col-md-auto intro contact-text">
+            <h2 style="color: rgb(255,255,255);font-family: Catamaran, sans-serif;font-weight: bold;font-size: 56px;">
+                ¡Trabajemos juntos!</h2>
+            <p class=" description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">TechKid está aquí
+                para mejorar la educación básica, estamos para brindarte más información, respondemos cualquier pregunta
+                que tengas y tomamos en cuenta las sugerencias de la comunidad. </p>
+        </div>
+
+        <div class="img-contact" style="padding-bottom: 24px;padding-right: 24px;padding-left: 24px;"><img
+                class="img-fluid" src="{% static 'TechKidApp/assets/img/home-school.jpeg' %}"
+                style="border-radius: 20px;">
+
+        </div>
+    </div>
+</section>
+<section class="contact-form">
+    <div class="intro">
+        <h2 class="text-center" style="font-family: Lato, sans-serif;font-weight: bold;font-size: 40px;">¿Cómo podemos
+            ayudarte?</h2>
+    </div>
+    
+    <div class="container-form" style="background: linear-gradient(rgb(59,119,205), #6d28aa 89%), rgb(59,118,205);">
+        <form id="my-form" onsubmit="return validation()"
+            style="background: rgba(0,0,0,0.4);padding-top: 34px;padding-right: 24px;padding-left: 24px;">
+            <div id="error_message"></div>
+            <div class="input_field">
+                <input type="text" placeholder="Nombre" id="name">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Correo electrónico" id="email">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Télefono" id="tel">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Asunto" id="subject">
+            </div>
+            <div class="input_field">
+                <textarea id="message" placeholder="Escriba aquí su mensaje"> </textarea>
+            </div>
+            <!-- <div class="buttons"><a class="btn btn-primary" role="button" href="{%url 'registro'%}" style="font-size: 16px;color: var(--bs-white);border-style: none;background: #fca311;border-radius: 30px;margin-bottom: -8px;font-family: Lato, sans-serif;padding: 13px 22px;padding-top: 24px;padding-right: 48px;padding-left: 48px;padding-bottom: 24px;">ENVIAR</a></div>
+            -->
+            <!-- <button class="input_field">Enviar</button> -->
+            <div class="btn">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Message -->
 {% endblock %}
