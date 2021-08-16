@@ -10,12 +10,16 @@
                 </div>
                 <div class="row articles">
                     <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-left-radius: 20px;border-bottom-left-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/tiktok.jpg' %}" style="border-radius: 20px;"></a>
-                        <h3 class="name" style="color: rgb(255,255,255);">TikTok para empresas</h3>
-                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">En este curso de TikTok para empresas, aprenderás a integrar contenido de video de TikTok dentro de la estrategia de marca de tu emprendimiento.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Aprende a programar con minecraft</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">En este curso conectaras con personas para desarrollar un servidor de minecraft desde cero.</p><a class="action" href="#">
+                            <a class="action" class="open-modal" data-open="modal1"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                        </a>
                     </div>
                     <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);padding-top: 34px;padding-bottom: 24px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/marketingdig.jpg' %}"  style="border-radius: 20px;"></a>
-                        <h3 class="name" style="color: rgb(255,255,255);">Marketing digital desde cero</h3>
-                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">¡Aprende las bases del marketing online! Descubre nuevas plataformas de Social Media, estrategias de growth hacking, publicidad digital y más.<br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                        <h3 class="name" style="color: rgb(255,255,255);">Creando tu primer página web-MARVEL.</h3>
+                        <p class="description" style="color: rgb(255,255,255);font-family: Lato, sans-serif;">¡Aprenderás las bases del desarrollo web y crearas tu primer página web con tu super heroe favorito y más.<br></p>
+                         <a class="action" class="open-modal" data-open="modal2"><i class="fa fa-arrow-circle-right" style="color: rgb(255,255,255);"></i></a>
+                        </a>
                     </div>
                     <div class="col-sm-6 col-md-4 item" style="background: rgba(0,0,0,0.4);border-top-right-radius: 20px;border-bottom-right-radius: 20px;padding-top: 34px;padding-right: 24px;padding-left: 24px;"><a href="#"><img class="img-fluid" src="{% static 'TechKidApp/assets/img/internet.jpg' %}" style="border-radius: 20px;"></a>
                         <h3 class="name" style="color: rgb(255,255,255);">¿Qué es el internet?</h3>
@@ -56,5 +60,42 @@
                 </div>
             </div>
     </section>
+
+
+
+<div class="modal" id="modal1" data-animation="slideInOutLeft">
+  <div class="modal-dialog">
+    <header class="modal-header">
+      
+      <button class="close-modal" aria-label="close modal" data-close>
+        ✕  
+      </button>
+    </header>
+    <section class="modal-content">
+      <p>En los últimos meses todo el mundo habla de Minecraft como herramienta en educación. El lanzamiento de Minecraft: Education Edition ha hecho que muchos se interesen por el videojuego, que a partir de ahora tendrá su propia versión específicamente diseñada para el aula.
+Tras haber hablado de las posibilidades y los beneficios de usar Minecraft en clase, hay muchos que continúan teniendo una duda capital: Realmente, ¿qué es Minecraft? ¿Cómo es posible que un videojuego pueda tener cabida en el aula y en la educación? Para los que no sepan de qué trata o para los que nunca lo hayan visto en acción, hoy vamos a desmigar los detalles de Minecraft, que por si fuera poco es considerado por muchos uno de los títulos más exitosos de la historia de los videojuegos.</p>
+    </section>
+    <footer class="modal-footer">
+      The footer of the first modal
+    </footer>
+  </div>
+</div>
+
+<div class="modal" id="modal2" data-animation="slideInOutLeft">
+  <div class="modal-dialog">
+    <header class="modal-header">
+      <button class="close-modal" aria-label="close modal" data-close>
+        ✕  
+      </button>
+    </header>
+    <section class="modal-content">
+      <p>En los últimos meses todo el mundo habla de Minecraft como herramienta en educación. El lanzamiento de Minecraft: Education Edition ha hecho que muchos se interesen por el videojuego, que a partir de ahora tendrá su propia versión específicamente diseñada para el aula.
+Tras haber hablado de las posibilidades y los beneficios de usar Minecraft en clase, hay muchos que continúan teniendo una duda capital: Realmente, ¿qué es Minecraft? ¿Cómo es posible que un videojuego pueda tener cabida en el aula y en la educación? Para los que no sepan de qué trata o para los que nunca lo hayan visto en acción, hoy vamos a desmigar los detalles de Minecraft, que por si fuera poco es considerado por muchos uno de los títulos más exitosos de la historia de los videojuegos.</p>
+    </section>
+    <footer class="modal-footer">
+      The footer of the first modal
+    </footer>
+  </div>
+</div>
 
 {%endblock%} 
