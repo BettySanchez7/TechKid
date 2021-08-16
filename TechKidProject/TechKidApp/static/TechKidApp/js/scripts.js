@@ -29,7 +29,14 @@ document.addEventListener("keyup", e => {
     document.querySelector(".modal.is-visible").classList.remove(isVisible);
   }
 });
+
+$(".img1").click(function () {  
+  document.getElementById('img1').src = "/static/TechKidApp/assets/img/minecraft.jpg";
+  document.getElementById('img1').id = "img2";
+});
+
 })(jQuery);
+
 
 /*function validation(){
     var name = document.getElementById("name").value;
