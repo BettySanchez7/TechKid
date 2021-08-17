@@ -1,0 +1,69 @@
+{% extends "TechKidApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Heading -->
+<section class="article-list" style="background: linear-gradient(rgb(59,119,205), #6d28aa 89%), rgb(59,118,205);">
+    <div class="shopping-header"
+        style="background: rgba(0,0,0,0.4);padding-top: 34px;padding-right: 24px;padding-left: 24px;">
+        <div class="col-md-auto intro contact-text">
+            <h2 style="color: rgb(255,255,255);font-family: Catamaran, sans-serif;font-weight: bold;font-size: 56px;">
+                ¡Empieza hoy!</h2>
+        </div>
+    </div>
+</section>
+<section class="compra-form">
+    <div class="compra-container row justify-content-center">
+        <div class="compra-curso col-lg-4">
+            <label for="exampleFormControlSelect1">Cursos</label>
+            <select class="form-control" id="productos">
+                <option>Fundamentos de programación</option>
+                <option>Mi primera página web</option>
+                <option>Marketing digital</option>
+                <option>Excel básico</option>
+            </select>
+        </div>
+        <div class="cantidad-curso col-lg-2">
+            <label for="exampleFormControlSelect1">Precio</label>
+            <input type="text" id="precio" class="form-control" placeholder="Precio">
+        </div>
+        <div class="precio-curso col-lg-2">
+            <label for="exampleFormControlSelect1">Cantidad</label>
+            <input type="text" id="cantidad" class="form-control" placeholder="Cantidad">
+        </div>
+        <div class="add-btn col-lg-2">
+            <a class="btn btn-light action-button" id="button" role="button" href="#"
+                onclick="agregar()"
+                style="padding: 3px 16px;background: #fca311;border-radius: 10px;">Agregar</a></span>
+        </div>
+    </div>
+</section>
+<section class="shopping-table">
+    <table class="table" id="info">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Subtotal</th>
+            </tr>
+        </thead>
+    </table>
+    <div class="asd">
+        <div>
+            <p>Subtotal</p>
+            <input type="text" id="subtotal">
+        </div>
+        <div>
+            <p>IVA</p>
+            <input type="text" id="iva">
+        </div>
+        <div>
+            <p>Total</p>
+            <input type="text" id="total">
+        </div>
+    </div>
+</section>
+<!-- Message -->
+{% endblock %}

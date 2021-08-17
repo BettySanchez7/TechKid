@@ -29,6 +29,9 @@ def cursos(request):
     
     return render(request, "TechKidApp/cursos.html")
 
+def compra(request):
+    return render(request, "TechKidApp/compra.html")
+
 def registro(request):
     
     return render(request, "TechKidApp/registro.html")
